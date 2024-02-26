@@ -1,10 +1,10 @@
 def call(Map pipelineParams){
-def projectName = pipelineParams.ecrRepoName
+def projectName = pipelineParams.dockerhubRepoName
 
 pipeline {
  agent any
   environment {
-    registry = "ybmsr/${projectName}"
+    registry = "achuthbunny/${projectName}"
     registryCredential = 'dockerhub_credentials'
     dockerImage = ''
   }
