@@ -5,7 +5,7 @@ pipeline {
  agent any
   environment {
     registry = "achuthbunny/${projectName}"
-    registryCredential = 'dockerhub_credentials'
+    registryCredential = 'docker_credentials'
     dockerImage = ''
   }
   stages {
